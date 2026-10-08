@@ -1,0 +1,107 @@
+# =============================================================================
+# tadb202620_examen_01 — Cadena de frío de los medicamentos
+# Repositorio con scripts SQL, documentación y salidas de consultas
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Datos de origen
+# El dataset oficial no se versiona: se distribuye aparte y debe ubicarse
+# localmente antes de ejecutar el BULK INSERT / COPY.
+# -----------------------------------------------------------------------------
+datos_cadena_frio.csv
+datos_cadena_frio.zip
+*.csv.gz
+
+# -----------------------------------------------------------------------------
+# Credenciales y configuración local (NUNCA versionar)
+# -----------------------------------------------------------------------------
+*.env
+.env*
+*credentials*
+*secrets*
+*.pgpass
+.pgpass
+*.publishsettings
+appsettings.Development.json
+connection_strings.*
+
+# -----------------------------------------------------------------------------
+# Archivos de datos y respaldos de motores de base de datos
+# -----------------------------------------------------------------------------
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trn
+*.dmp
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+
+# -----------------------------------------------------------------------------
+# SQL Server Management Studio / Azure Data Studio
+# -----------------------------------------------------------------------------
+*.suo
+*.user
+*.sln.docstates
+*.dtsx.user
+*.rptproj.user
+*.sqlproj.user
+bin/
+obj/
+.vs/
+
+# -----------------------------------------------------------------------------
+# DataGrip / JetBrains / DBeaver / VS Code
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+.dbeaver/
+.DBeaverData/
+.vscode/
+*.code-workspace
+
+# -----------------------------------------------------------------------------
+# Contenedores y despliegue local
+# -----------------------------------------------------------------------------
+docker-compose.override.yml
+.docker/
+volumes/
+pgdata/
+mssql-data/
+
+# -----------------------------------------------------------------------------
+# Archivos temporales de ejecución y exportación
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+output/
+temp/
+tmp/
+~$*.xlsx
+~$*.docx
+
+# -----------------------------------------------------------------------------
+# Sistema operativo
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -----------------------------------------------------------------------------
+# EXCEPCIONES — estos archivos SÍ deben versionarse
+# -----------------------------------------------------------------------------
+!DOCUMENTOS/consulta_A_medicamentos.csv
+!DOCUMENTOS/consulta_B_lotes.csv
+!DOCUMENTOS/consulta_C_existencias.csv
+!DOCUMENTOS/resultados_etapa5.csv
